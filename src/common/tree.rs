@@ -1,11 +1,7 @@
-//! LeetCode 风格的共享二叉树类型。
 
 use std::cell::RefCell;
 use std::rc::Rc;
-
 pub type Node = Option<Rc<RefCell<TreeNode>>>;
-
-/// 与 LeetCode 题目中的二叉树节点定义保持一致。
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
     pub val: i32,
